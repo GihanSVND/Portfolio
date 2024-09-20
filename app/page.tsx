@@ -1,101 +1,100 @@
 import Image from "next/image";
+import {Poppins} from "next/font/google"
+
+const poppins1 = Poppins({weight: '100', subsets: ["latin"]})
+const poppins2 = Poppins({weight: '200', subsets: ["latin"]})
+const poppins3 = Poppins({weight: '300', subsets: ["latin"]})
+const poppins4 = Poppins({weight: '400', subsets: ["latin"]})
+const poppins5 = Poppins({weight: '500', subsets: ["latin"]})
+const poppins6 = Poppins({weight: '600', subsets: ["latin"]})
+const poppins7 = Poppins({weight: '700', subsets: ["latin"]})
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <body className={poppins2.className}>
+    <div className="bg-black">
+      {/* Main Section */}
+      <div className="flex flex-col justify-center items-center h-screen relative ">
+        
+        <div className="transform -translate-y-[-680px] z-40">
+          <svg className="animate-bounce w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        
+        {/* Main Image */}
+        <Image
+          src="/thinker.png"
+          alt="File icon"
+          width={600}
+          height={600}
+          className="z-10 transform scale-100 -translate-y-[-100px] transition-transform duration-500 ease-out"
+        />
+
+        {/* Large Text */}
+      
+          <h1 className={`${poppins7.className} absolute z-0 text-[300px] font-extrabold text-gray-300 transform -translate-y-[210px]`}>
+            THINKER
+            <span className="text-[#FF4401]">.</span>
+          </h1>
+        
+        
+      </div>
+      
+
+      {/* New Section for Grid */}
+      <section className="w-full py-[200px] bg-black">
+      
+        <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 px-4">
+          {/* Left Column - Image */}
+          <div className="flex flex-col items-start transform -translate-x-[-200px]">
+            <div className="absolute bottom-16 w-[90px] border-t-2 border-[#FF4401]  -translate-y-[680px]"></div>
+            <p className="text-[30px]">
+              Love 
+              <span className={`${poppins7.className} text-[#FF4401]`}> UI/UX</span>
+              </p>
+              
+              <p className="text-[50px]">
+                <span className={`${poppins7.className} text-[#FF4401]`}> Develop</span>
+                Technology 
+              </p>
+              
+              <p className={`${poppins1.className} -translate-x-[15px] text-[170px]`}>
+                Design 
+              </p>
+              <p className="text-[30px]">
+              Hello!. I am  
+              <span className={`${poppins7.className} text-[#FF4401]`}> Gihan Savinda</span>
+                <br/>
+                <span className={`${poppins2.className} text-[25px]`}>
+                I enjoy creating delightful, human-centered
+                <br/>
+                digital experiences.
+                </span>
+              </p>
+          </div>
+
+          
+
+          {/* Right Column - Text */}
+          <div className="flex flex-col justify-center items-start text-left text-white -translate-x-[-70px]">
+            
+          <h1 className={`${poppins7.className} -rotate-90 absolute z-0 text-[150px] font-extrabold text-gray-300 transform -translate-x-[170px] -translate-y-[120px]`}>
+            Brands
+            <span className="text-[#FF4401]">.</span>
+          </h1>
           <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          src="/gihan.png"
+          alt="File icon"
+          width={700}
+          height={700}
+          className="z-10 transform scale-100 -translate-y-[100px] transition-transform duration-500 ease-out"
+        />
+            
+          </div>
+        </div>
+      </section>
     </div>
+    </body>
   );
 }
