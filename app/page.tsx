@@ -94,9 +94,9 @@ export default function Home() {
             </div>
 
             {/* Right Column - Text */}
-            <div className="flex flex-col justify-center items-start text-left text-white -translate-x-[-70px]">
+            <div className="flex flex-col justify-center items-start text-left text-white pl-[100px]">
               <h1
-                className={`${poppins7.className} -rotate-90 absolute z-0 text-[150px] font-extrabold text-gray-300 transform -translate-x-[170px] -translate-y-[120px]`}
+                className={`${poppins7.className} -rotate-90 absolute z-0 text-[150px] font-extrabold text-gray-300 transform -translate-x-[150px] -translate-y-[120px]`}
               >
                 Brands
                 <span className="text-[#FF4401]">.</span>
