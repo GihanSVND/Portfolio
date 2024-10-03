@@ -2,6 +2,9 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import MainNavBar from "@/components/mainNavBar";
+import CategoryFilter from "@/components/filter";
+import Card from "@/components/card";
+import { useState } from "react";
 
 const poppins1 = Poppins({ weight: "100", subsets: ["latin"] });
 const poppins2 = Poppins({ weight: "200", subsets: ["latin"] });
@@ -11,7 +14,21 @@ const poppins5 = Poppins({ weight: "500", subsets: ["latin"] });
 
 const poppins7 = Poppins({ weight: "700", subsets: ["latin"] });
 
+// Define your categories
+const categories = ["Swift", "UI/UX", "Web", "ML"];
+
 export default function Home() {
+  const [selectedCategory, setSelectedCategory] = useState<string>(
+    categories[0]
+  );
+
+  // Handle category change
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category);
+    // Add logic to fetch/filter/display projects based on category
+    console.log("Selected category:", category);
+  };
+
   return (
     <body className={poppins2.className}>
       <div>
@@ -129,15 +146,11 @@ export default function Home() {
             </div>
           </section>
 
-          <section >
+          <section>
             <div className="flex flex-col translate-y-[-120px] justify-center items-center relative ">
-              <h1 id="timeline"
-                className={`${poppins5.className} absolute text-[40px]   // xs
-      sm:text-[60px]
-      md:text-[100px]
-      lg:text-[150px]
-      xl:text-[200px]
-      2xl:text-[250px] font-extrabold text-gray-300`}
+              <h1
+                id="timeline"
+                className={`${poppins5.className} absolute text-[60px] sm:text-[100px] md:text-[200px] font-extrabold text-gray-300 -mt-[400px] md:-mt-[200px]`}
               >
                 Time Line
                 <span className="text-[#FF4401]">.</span>
@@ -266,13 +279,72 @@ export default function Home() {
           </section>
 
           <div className="flex flex-col py-[200px] justify-center items-center relative ">
-            <h1 id="work"
-              className={`${poppins5.className} absolute text-[200px] font-extrabold text-gray-300`}
+            <h1
+              id="work"
+              className={`${poppins5.className} absolute text-[60px] sm:text-[100px] md:text-[200px] font-extrabold text-gray-300 -mt-[200px] md:-mt-[100px]`}
             >
               Work
               <span className="text-[#FF4401]">.</span>
             </h1>
           </div>
+          <CategoryFilter
+            categories={categories}
+            onSelectCategory={handleCategoryChange}
+          />
+          <section className="px-4 py-12">
+            
+              {/* You would display filtered projects based on the selected category here */}
+              {selectedCategory === "Swift" && (
+                <div className="p-4">
+                  
+
+                  <div className="justify-items-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-y-[100px] gap-x-[0px] xl:px-[100px]">
+                    <div><Card
+                    image="/figma.png"
+                    title="Sample Title"
+                    description="This is a sample description for the card."
+                    seeMoreLink="https://example.com"
+                  /></div>
+                    <div><Card
+                    image="/figma.png"
+                    title="Sample Title"
+                    description="This is a sample description for the card."
+                    seeMoreLink="https://example.com"
+                  /></div>
+                    <div><Card
+                    image="/figma.png"
+                    title="Sample Title"
+                    description="This is a sample description for the card."
+                    seeMoreLink="https://example.com"
+                  /></div>
+                    <div><Card
+                    image="/figma.png"
+                    title="Sample Title"
+                    description="This is a sample description for the card."
+                    seeMoreLink="https://example.com"
+                  /></div>
+                    <div><Card
+                    image="/figma.png"
+                    title="Sample Title"
+                    description="This is a sample description for the card."
+                    seeMoreLink="https://example.com"
+                  /></div>
+                    <div><Card
+                    image="/figma.png"
+                    title="Sample Title"
+                    description="This is a sample description for the card."
+                    seeMoreLink="https://example.com"
+                  /></div>
+                  </div>
+                </div>
+              )}
+              {selectedCategory === "UI/UX" && (
+                <p>Displaying UI/UX projects...</p>
+              )}
+              {selectedCategory === "Web" && <p>Displaying Web projects...</p>}
+              {selectedCategory === "ML" && <p>Displaying ML projects...</p>}
+            
+          </section>
         </div>
       </div>
     </body>
