@@ -17,7 +17,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full flex justify-center space-x-10 py-4 backdrop-blur-lg bg-black/50 z-50 transition-all duration-300 ease-in-out">
+    <nav className="fixed top-0 left-0 w-full flex justify-center space-x-[20px] sm:space-x-[50px] md:space-x-[100px] py-4 backdrop-blur-lg bg-black/50 z-50 transition-all duration-300 ease-in-out">
       {navItems.map((item) => (
         <a
           key={item.id}

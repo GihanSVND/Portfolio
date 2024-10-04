@@ -157,7 +157,7 @@ export default function Home() {
               </h1>
             </div>
             <div>
-              <div className="relative flex flex-col items-center py-[100px]">
+              <div className="relative flex flex-col items-center py-[100px] translate-y-[-300px] sm:translate-y-[-100px]">
                 {/* Vertical Line */}
                 <div className="z-10 absolute w-[1px] bg-[#FF4401] h-[700px] left-1/2 transform -translate-x-1/2"></div>
                 <div className="absolute bottom-16 w-[50px] border-t-[1px] border-[#FF4401] translate-y-[17px]"></div>
@@ -166,7 +166,7 @@ export default function Home() {
                 <div className="z-40 space-y-[100px]">
                   {/* First card: Logo Designer */}
                   <div className="flex items-center w-full">
-                    <div className="absolute w-4 h-4 bg-[#FF4401] rounded-full left-1/2 transform translate-y-[75px] -translate-x-1/2"></div>
+                    <div className="absolute w-4 h-4 bg-[#FF4401] rounded-full left-1/2 transform translate-y-[75px] sm:translate-y-[-5px] -translate-x-1/2"></div>
                     <div className="flex justify-center sm:justify-start sm:pr-10 sm:translate-x-[-300px]">
                       <div className="bg-[#18181b] border-[1px] border-white text-white p-8 w-[300px] sm:w-[400px] h-[150px] rounded-[30px] shadow-lg">
                         <div className="flex items-center">
@@ -204,7 +204,7 @@ export default function Home() {
 
                   {/* Second card: 3D Artist */}
                   <div className="flex items-center w-full">
-                    <div className="absolute w-4 h-4 bg-[#FF4401] rounded-full left-1/2 transform translate-y-[75px] -translate-x-1/2"></div>
+                    <div className="absolute w-4 h-4 bg-[#FF4401] rounded-full left-1/2 transform translate-y-[75px] sm:translate-y-[-5px] -translate-x-1/2"></div>
                     <div className="hidden sm:block w-1/2"></div>{" "}
                     {/* Empty space for larger screens */}
                     <div className="flex justify-center sm:justify-start sm:pr-10 sm:translate-x-[350px]">
@@ -238,7 +238,7 @@ export default function Home() {
 
                   {/* Third card: Logo Designer */}
                   <div className="flex items-center w-full">
-                    <div className="absolute w-4 h-4 bg-[#FF4401] rounded-full left-1/2 transform translate-y-[75px] -translate-x-1/2"></div>
+                    <div className="absolute w-4 h-4 bg-[#FF4401] rounded-full left-1/2 transform translate-y-[75px] sm:translate-y-[-5px] -translate-x-1/2"></div>
                     <div className="flex justify-center sm:justify-start sm:pr-10 sm:translate-x-[-300px]">
                       <div className="bg-[#18181b] border-[1px] border-white text-white p-8 w-[300px] sm:w-[400px] h-[150px] rounded-[30px] shadow-lg">
                         <div className="flex items-center">
@@ -281,60 +281,70 @@ export default function Home() {
           <div className="flex flex-col py-[200px] justify-center items-center relative ">
             <h1
               id="work"
-              className={`${poppins5.className} absolute text-[60px] sm:text-[100px] md:text-[200px] font-extrabold text-gray-300 -mt-[200px] md:-mt-[100px]`}
+              className={`${poppins5.className} absolute text-[60px] sm:text-[100px] md:text-[200px] font-extrabold text-gray-300 -mt-[750px] md:-mt-[100px]`}
             >
               Work
               <span className="text-[#FF4401]">.</span>
             </h1>
           </div>
-          <CategoryFilter
-            categories={categories}
-            onSelectCategory={handleCategoryChange}
-          />
-          <section className="px-4 py-12">
-            
+          <div className="mt-[-450px] sm:mt-[-50px]" >
+            <CategoryFilter
+              categories={categories}
+              onSelectCategory={handleCategoryChange}
+            />
+            <section className="px-4 py-12">
               {/* You would display filtered projects based on the selected category here */}
               {selectedCategory === "Swift" && (
                 <div className="p-4">
-                  
-
                   <div className="justify-items-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-y-[100px] gap-x-[0px] xl:px-[100px]">
-                    <div><Card
-                    image="/figma.png"
-                    title="Sample Title"
-                    description="This is a sample description for the card."
-                    seeMoreLink="https://example.com"
-                  /></div>
-                    <div><Card
-                    image="/figma.png"
-                    title="Sample Title"
-                    description="This is a sample description for the card."
-                    seeMoreLink="https://example.com"
-                  /></div>
-                    <div><Card
-                    image="/figma.png"
-                    title="Sample Title"
-                    description="This is a sample description for the card."
-                    seeMoreLink="https://example.com"
-                  /></div>
-                    <div><Card
-                    image="/figma.png"
-                    title="Sample Title"
-                    description="This is a sample description for the card."
-                    seeMoreLink="https://example.com"
-                  /></div>
-                    <div><Card
-                    image="/figma.png"
-                    title="Sample Title"
-                    description="This is a sample description for the card."
-                    seeMoreLink="https://example.com"
-                  /></div>
-                    <div><Card
-                    image="/figma.png"
-                    title="Sample Title"
-                    description="This is a sample description for the card."
-                    seeMoreLink="https://example.com"
-                  /></div>
+                    <div>
+                      <Card
+                        image="/figma.png"
+                        title="Sample Title"
+                        description="This is a sample description for the card."
+                        seeMoreLink="https://example.com"
+                      />
+                    </div>
+                    <div>
+                      <Card
+                        image="/figma.png"
+                        title="Sample Title"
+                        description="This is a sample description for the card."
+                        seeMoreLink="https://example.com"
+                      />
+                    </div>
+                    <div>
+                      <Card
+                        image="/figma.png"
+                        title="Sample Title"
+                        description="This is a sample description for the card."
+                        seeMoreLink="https://example.com"
+                      />
+                    </div>
+                    <div>
+                      <Card
+                        image="/figma.png"
+                        title="Sample Title"
+                        description="This is a sample description for the card."
+                        seeMoreLink="https://example.com"
+                      />
+                    </div>
+                    <div>
+                      <Card
+                        image="/figma.png"
+                        title="Sample Title"
+                        description="This is a sample description for the card."
+                        seeMoreLink="https://example.com"
+                      />
+                    </div>
+                    <div>
+                      <Card
+                        image="/figma.png"
+                        title="Sample Title"
+                        description="This is a sample description for the card."
+                        seeMoreLink="https://example.com"
+                      />
+                    </div>
                   </div>
                 </div>
               )}
@@ -343,8 +353,8 @@ export default function Home() {
               )}
               {selectedCategory === "Web" && <p>Displaying Web projects...</p>}
               {selectedCategory === "ML" && <p>Displaying ML projects...</p>}
-            
-          </section>
+            </section>
+          </div>
         </div>
       </div>
     </body>
