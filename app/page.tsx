@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   return (
-    <body className={poppins2.className}>
+    <div className={poppins2.className}>
       <div>
         <MainNavBar></MainNavBar>
         <div className="bg-black">
@@ -131,7 +131,7 @@ export default function Home() {
                     alt="Gihan Image"
                     width={600}
                     height={600}
-                    className="z-10 transform scale-100 mt-8 md:mt-0 translate-y-[-180px] translate-x-[50px] md:-translate-y-[100px] md:translate-x-[50px] transition-transform duration-500 ease-out"
+                    className="z-10 transform scale-100 mt-8 md:mt-0 translate-y-[-180px] translate-x-[-40px] md:-translate-y-[100px] md:translate-x-[-60px] transition-transform duration-500 ease-out"
                   />
 
                   {/* Rotated Text on Small Screens */}
@@ -278,85 +278,78 @@ export default function Home() {
             </div>
           </section>
 
-          <div className="flex flex-col py-[200px] justify-center items-center relative ">
+          <div className="flex flex-col sm:py-[150px] justify-center items-center relative ">
             <h1
               id="work"
-              className={`${poppins5.className} absolute text-[60px] sm:text-[100px] md:text-[200px] font-extrabold text-gray-300 -mt-[750px] md:-mt-[100px]`}
+              className={`${poppins5.className} absolute text-[60px] sm:text-[100px] md:text-[200px] font-extrabold text-gray-300 -mt-[250px] md:-mt-[100px]`}
             >
               Work
               <span className="text-[#FF4401]">.</span>
             </h1>
           </div>
-          <div className="mt-[-450px] sm:mt-[-50px]" >
+          
+          <div className="flex flex-col items-center">
+            
+            {/* Include the CategoryFilter component */}
             <CategoryFilter
               categories={categories}
               onSelectCategory={handleCategoryChange}
             />
-            <section className="px-4 py-12">
-              {/* You would display filtered projects based on the selected category here */}
+          </div>
+
+          {/* Projects Section */}
+          <div className="px-4">
+            
+            
+              {/* Here you'd dynamically load projects based on the selected category */}
+
               {selectedCategory === "Swift" && (
-                <div className="p-4">
-                  <div className="justify-items-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-y-[100px] gap-x-[0px] xl:px-[100px]">
-                    <div>
-                      <Card
-                        image="/figma.png"
-                        title="Sample Title"
-                        description="This is a sample description for the card."
-                        seeMoreLink="https://example.com"
-                      />
-                    </div>
-                    <div>
-                      <Card
-                        image="/figma.png"
-                        title="Sample Title"
-                        description="This is a sample description for the card."
-                        seeMoreLink="https://example.com"
-                      />
-                    </div>
-                    <div>
-                      <Card
-                        image="/figma.png"
-                        title="Sample Title"
-                        description="This is a sample description for the card."
-                        seeMoreLink="https://example.com"
-                      />
-                    </div>
-                    <div>
-                      <Card
-                        image="/figma.png"
-                        title="Sample Title"
-                        description="This is a sample description for the card."
-                        seeMoreLink="https://example.com"
-                      />
-                    </div>
-                    <div>
-                      <Card
-                        image="/figma.png"
-                        title="Sample Title"
-                        description="This is a sample description for the card."
-                        seeMoreLink="https://example.com"
-                      />
-                    </div>
-                    <div>
-                      <Card
-                        image="/figma.png"
-                        title="Sample Title"
-                        description="This is a sample description for the card."
-                        seeMoreLink="https://example.com"
-                      />
-                    </div>
-                  </div>
+                <div>
+                <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
+                  <Card
+                    image="/CLAWS.png"
+                    title="CLAWS – Cultivated Lands Animal Warning System"
+                    description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
+                    seeMoreLink="https://example.com"
+                  />
                 </div>
+                <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
+                  <Card
+                    image="/TailCast.png"
+                    title="TailCast"
+                    description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
+                    seeMoreLink="https://example.com"
+                  />
+                </div>
+              </div>
+              
               )}
               {selectedCategory === "UI/UX" && (
-                <p>Displaying UI/UX projects...</p>
+                <div>
+                <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
+                  <Card
+                    image="/CLAWS.png"
+                    title="CLAWS – Cultivated Lands Animal Warning System"
+                    description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
+                    seeMoreLink="https://example.com"
+                  />
+                </div>
+                <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
+                  <Card
+                    image="/TailCast.png"
+                    title="TailCast"
+                    description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
+                    seeMoreLink="https://example.com"
+                  />
+                </div>
+              </div>
               )}
               {selectedCategory === "Web" && <p>Displaying Web projects...</p>}
               {selectedCategory === "ML" && <p>Displaying ML projects...</p>}
-            </section>
+            
           </div>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
