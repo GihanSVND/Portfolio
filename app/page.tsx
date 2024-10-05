@@ -304,23 +304,23 @@ export default function Home() {
                 <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
                   <Card
                     image="/SOCS.png"
-                    title="CLAWS – Cultivated Lands Animal Warning System"
-                    description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
+                    title="Official Website of the Society of Computer Sciences – SUSL "
+                    description="Website serves as a central platform for disseminating information, facilitating communication among members, and promoting the society's activities"
                     seeMoreLink="https://example.com"
                   />
                 </div>
                 <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
                   <Card
                     image="/Binvesto.png"
-                    title="TailCast"
-                    description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
+                    title="BINVESTO"
+                    description="Website serve as a central platform for large and small businesses to grow their capital."
                     seeMoreLink="https://example.com"
                   />
                 </div>
                 <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
                   <Card
                     image="/Travlo.png"
-                    title="TailCast"
+                    title="TRAVLO"
                     description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
                     seeMoreLink="https://example.com"
                   />
@@ -351,21 +351,21 @@ export default function Home() {
             {selectedCategory === "Web" && (
               <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
                 <Card
-                  image="/SOCS.png"
-                  title="CLAWS – Cultivated Lands Animal Warning System"
-                  description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
-                  seeMoreLink="https://example.com"
-                />
+                    image="/SOCS.png"
+                    title="Official Website of the Society of Computer Sciences – SUSL "
+                    description="Website serves as a central platform for disseminating information, facilitating communication among members, and promoting the society's activities"
+                    seeMoreLink="https://example.com"
+                  />
               </div>
             )}
             {selectedCategory === "ML" && (
               <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
                 <Card
-                  image="/CLAWS.png"
-                  title="CLAWS – Cultivated Lands Animal Warning System"
-                  description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
-                  seeMoreLink="https://example.com"
-                />
+                    image="/CLAWS.png"
+                    title="CLAWS – Cultivated Lands Animal Warning System"
+                    description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
+                    seeMoreLink="https://example.com"
+                  />
               </div>
             )}
           </div>
