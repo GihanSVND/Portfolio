@@ -328,7 +328,7 @@ export default function Home() {
                 <div>
                 <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
                   <Card
-                    image="/CLAWS.png"
+                    image="/SOCS.png"
                     title="CLAWS – Cultivated Lands Animal Warning System"
                     description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
                     seeMoreLink="https://example.com"
@@ -336,7 +336,15 @@ export default function Home() {
                 </div>
                 <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
                   <Card
-                    image="/TailCast.png"
+                    image="/Binvesto.png"
+                    title="TailCast"
+                    description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
+                    seeMoreLink="https://example.com"
+                  />
+                </div>
+                <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
+                  <Card
+                    image="/Travlo.png"
                     title="TailCast"
                     description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
                     seeMoreLink="https://example.com"
