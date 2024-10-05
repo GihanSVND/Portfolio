@@ -9,7 +9,7 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ image, title, description, seeMoreLink }) => {
   return (
-    <div className="bg-[#18181b] border-[1px] border-white text-white rounded-[48px] overflow-hidden shadow-lg p-4">
+    <div className="bg-[#18181b] border-[1px] border-white text-white rounded-[48px] overflow-hidden shadow-lg p-4 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 duration-500">
       <div className="flex justify-center items-center rounded-[38px] mb-4">
         {image ? (
           <img src={image} alt={title} className="w-auto h-auto max-w-full rounded-[38px]" />

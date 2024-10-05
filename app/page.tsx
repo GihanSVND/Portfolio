@@ -15,7 +15,7 @@ const poppins5 = Poppins({ weight: "500", subsets: ["latin"] });
 const poppins7 = Poppins({ weight: "700", subsets: ["latin"] });
 
 // Define your categories
-const categories = ["Swift", "UI/UX", "Web", "ML"];
+const categories = ["UI/UX", "Swift", "Web", "ML"];
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string>(
@@ -287,9 +287,8 @@ export default function Home() {
               <span className="text-[#FF4401]">.</span>
             </h1>
           </div>
-          
+
           <div className="flex flex-col items-center">
-            
             {/* Include the CategoryFilter component */}
             <CategoryFilter
               categories={categories}
@@ -299,33 +298,9 @@ export default function Home() {
 
           {/* Projects Section */}
           <div className="px-4">
-            
-            
-              {/* Here you'd dynamically load projects based on the selected category */}
-
-              {selectedCategory === "Swift" && (
-                <div>
-                <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
-                  <Card
-                    image="/CLAWS.png"
-                    title="CLAWS – Cultivated Lands Animal Warning System"
-                    description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
-                    seeMoreLink="https://example.com"
-                  />
-                </div>
-                <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
-                  <Card
-                    image="/TailCast.png"
-                    title="TailCast"
-                    description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
-                    seeMoreLink="https://example.com"
-                  />
-                </div>
-              </div>
-              
-              )}
-              {selectedCategory === "UI/UX" && (
-                <div>
+            {/* Here you'd dynamically load projects based on the selected category */}
+            {selectedCategory === "UI/UX" && (
+              <div>
                 <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
                   <Card
                     image="/SOCS.png"
@@ -351,10 +326,48 @@ export default function Home() {
                   />
                 </div>
               </div>
-              )}
-              {selectedCategory === "Web" && <p>Displaying Web projects...</p>}
-              {selectedCategory === "ML" && <p>Displaying ML projects...</p>}
-            
+            )}
+            {selectedCategory === "Swift" && (
+              <div>
+                <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
+                  <Card
+                    image="/CLAWS.png"
+                    title="CLAWS – Cultivated Lands Animal Warning System"
+                    description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
+                    seeMoreLink="https://example.com"
+                  />
+                </div>
+                <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
+                  <Card
+                    image="/TailCast.png"
+                    title="TailCast"
+                    description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
+                    seeMoreLink="https://example.com"
+                  />
+                </div>
+              </div>
+            )}
+
+            {selectedCategory === "Web" && (
+              <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
+                <Card
+                  image="/SOCS.png"
+                  title="CLAWS – Cultivated Lands Animal Warning System"
+                  description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
+                  seeMoreLink="https://example.com"
+                />
+              </div>
+            )}
+            {selectedCategory === "ML" && (
+              <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
+                <Card
+                  image="/CLAWS.png"
+                  title="CLAWS – Cultivated Lands Animal Warning System"
+                  description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
+                  seeMoreLink="https://example.com"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

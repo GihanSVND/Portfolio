@@ -20,13 +20,13 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({ categories, onSelectCat
         <div
           key={category}
           className={`cursor-pointer ${
-            activeCategory === category ? 'text-orange-500' : 'text-white'
+            activeCategory === category ? 'text-[#FF4401]' : 'text-white'
           }`}
           onClick={() => handleClick(category)}
         >
           {category}
           {activeCategory === category && (
-            <div className="h-1 mt-1 bg-orange-500"></div>
+            <div className="h-1 mt-1 bg-[#FF4401]"></div>
           )}
         </div>
       ))}
