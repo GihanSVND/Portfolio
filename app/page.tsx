@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   return (
-    <div className={poppins2.className}>
+    <div className={`${poppins2.className} pt-[50px]`}>
       <div>
         <MainNavBar></MainNavBar>
         <div className="bg-black">
@@ -351,23 +351,132 @@ export default function Home() {
             {selectedCategory === "Web" && (
               <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
                 <Card
-                    image="/SOCS.png"
-                    title="Official Website of the Society of Computer Sciences – SUSL "
-                    description="Website serves as a central platform for disseminating information, facilitating communication among members, and promoting the society's activities"
-                    seeMoreLink="https://example.com"
-                  />
+                  image="/SOCS.png"
+                  title="Official Website of the Society of Computer Sciences – SUSL "
+                  description="Website serves as a central platform for disseminating information, facilitating communication among members, and promoting the society's activities"
+                  seeMoreLink="https://example.com"
+                />
               </div>
             )}
             {selectedCategory === "ML" && (
               <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
                 <Card
-                    image="/CLAWS.png"
-                    title="CLAWS – Cultivated Lands Animal Warning System"
-                    description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
-                    seeMoreLink="https://example.com"
-                  />
+                  image="/CLAWS.png"
+                  title="CLAWS – Cultivated Lands Animal Warning System"
+                  description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
+                  seeMoreLink="https://example.com"
+                />
               </div>
             )}
+          </div>
+          <div id="contact" className="mt-[100px]">
+          <div className="flex flex-col sm:py-[150px] justify-center items-center relative ">
+            <h1
+              className={`${poppins5.className} absolute text-[60px] sm:text-[100px] md:text-[200px] font-extrabold text-gray-300`}
+            >
+              Contact
+              <span className="text-[#FF4401]">.</span>
+            </h1>
+          </div>
+            <div className="min-h-screen bg-black text-white flex items-center justify-center p-8 mt-[100px] sm:mt-[0px]">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[200px] max-w-6xl w-full">
+                {/* Left Section - Image and Info */}
+                <div className="flex flex-col items-center text-center">
+                  <img
+                    src="/thinker.png"
+                    alt="Gihan Savinda"
+                    className="w-64 h-64 object-cover rounded-full mb-8"
+                  />
+                  <h1 className="text-4xl font-bold mb-4">Gihan Savinda</h1>
+                  <p className="text-gray-400 mb-8">
+                  UI/UX Engineer | IOS Developer | Passionated on Machine Learning & Image Processing | CIS Undergraduate
+                  </p>
+                  {/* Social Icons */}
+                  <div className="flex space-x-4">
+                    <button className="bg-gray-600 w-12 h-12 rounded-full text-gray-400 hover:bg-gray-500">
+                      Icon
+                    </button>
+                    <button className="bg-gray-600 w-12 h-12 rounded-full text-gray-400 hover:bg-gray-500">
+                      Icon
+                    </button>
+                    <button className="bg-gray-600 w-12 h-12 rounded-full text-gray-400 hover:bg-gray-500">
+                      Icon
+                    </button>
+                    <button className="bg-gray-600 w-12 h-12 rounded-full text-gray-400 hover:bg-gray-500">
+                      Icon
+                    </button>
+                  </div>
+                </div>
+
+                {/* Right Section - Contact Form */}
+                <div className="flex flex-col justify-center">
+                  <form className="space-y-6">
+                    <div>
+                      <label
+                        htmlFor="name"
+                        className="block text-lg font-medium mb-2"
+                      >
+                        Your Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        className="w-full p-4 border border-gray-700 rounded-[50px] bg-transparent"
+                        placeholder="Name"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="profession"
+                        className="block text-lg font-medium mb-2"
+                      >
+                        Profession
+                      </label>
+                      <input
+                        type="text"
+                        id="profession"
+                        className="w-full p-4 border border-gray-700 rounded-[50px] bg-transparent"
+                        placeholder="Profession"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="email"
+                        className="block text-lg font-medium mb-2"
+                      >
+                        Your Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        className="w-full p-4 border border-gray-700 rounded-[50px] bg-transparent"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="message"
+                        className="block text-lg font-medium mb-2"
+                      >
+                        Your Message
+                      </label>
+                      <textarea
+                        id="message"
+                        rows={4}
+                        className="w-full p-4 border border-gray-700 rounded-[25px] bg-transparent"
+                        placeholder="Message"
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className="w-full py-3 bg-[#FF4401] text-white font-bold rounded-[50px] hover:bg-orange-600"
+                    >
+                      SEND
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
