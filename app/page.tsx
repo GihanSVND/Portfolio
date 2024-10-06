@@ -370,46 +370,83 @@ export default function Home() {
             )}
           </div>
           <div id="contact" className="mt-[100px]">
-          <div className="flex flex-col sm:py-[150px] justify-center items-center relative ">
-            <h1
-              className={`${poppins5.className} absolute text-[60px] sm:text-[100px] md:text-[200px] font-extrabold text-gray-300`}
-            >
-              Contact
-              <span className="text-[#FF4401]">.</span>
-            </h1>
-          </div>
+            <div className="flex flex-col sm:py-[150px] justify-center items-center relative ">
+              <h1
+                className={`${poppins5.className} absolute text-[60px] sm:text-[100px] md:text-[200px] font-extrabold text-gray-300`}
+              >
+                Contact
+                <span className="text-[#FF4401]">.</span>
+              </h1>
+            </div>
             <div className="min-h-screen bg-black text-white flex items-center justify-center p-8 mt-[100px] sm:mt-[0px]">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[200px] max-w-6xl w-full">
                 {/* Left Section - Image and Info */}
                 <div className="flex flex-col items-center text-center">
                   <img
-                    src="/thinker.png"
+                    src="/Gihan_2.png"
                     alt="Gihan Savinda"
-                    className="w-64 h-64 object-cover rounded-full mb-8"
+                    className="w-[400px] h-[400px] object-cover mb-8"
                   />
-                  <h1 className="text-4xl font-bold mb-4">Gihan Savinda</h1>
+                  <h1 className="text-[50px] mb-4">Gihan Savinda</h1>
                   <p className="text-gray-400 mb-8">
-                  UI/UX Engineer | IOS Developer | Passionated on Machine Learning & Image Processing | CIS Undergraduate
+                    UI/UX Engineer | IOS Developer | Passionated on Machine
+                    Learning & Image Processing | CIS Undergraduate
                   </p>
                   {/* Social Icons */}
-                  <div className="flex space-x-4">
-                    <button className="bg-gray-600 w-12 h-12 rounded-full text-gray-400 hover:bg-gray-500">
-                      Icon
+                  <div className="flex space-x-[30px] sm:space-x-[60px]">
+                    <button
+                      className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
+                      onClick={() =>
+                        window.open("https://example.com", "_blank")
+                      }
+                    >
+                      <img
+                        src="/Swift.png"
+                        alt="Icon 1"
+                        className="w-full h-full object-cover"
+                      />
                     </button>
-                    <button className="bg-gray-600 w-12 h-12 rounded-full text-gray-400 hover:bg-gray-500">
-                      Icon
+                    <button
+                      className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
+                      onClick={() =>
+                        window.open("https://example.com", "_blank")
+                      }
+                    >
+                      <img
+                        src="/Swift.png"
+                        alt="Icon 2"
+                        className="w-full h-full object-cover"
+                      />
                     </button>
-                    <button className="bg-gray-600 w-12 h-12 rounded-full text-gray-400 hover:bg-gray-500">
-                      Icon
+                    <button
+                      className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
+                      onClick={() =>
+                        window.open("https://example.com", "_blank")
+                      }
+                    >
+                      <img
+                        src="/Swift.png"
+                        alt="Icon 3"
+                        className="w-full h-full object-cover"
+                      />
                     </button>
-                    <button className="bg-gray-600 w-12 h-12 rounded-full text-gray-400 hover:bg-gray-500">
-                      Icon
+                    <button
+                      className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
+                      onClick={() =>
+                        window.open("https://example.com", "_blank")
+                      }
+                    >
+                      <img
+                        src="/Swift.png"
+                        alt="Icon 4"
+                        className="w-full h-full object-cover"
+                      />
                     </button>
                   </div>
                 </div>
 
                 {/* Right Section - Contact Form */}
-                <div className="flex flex-col justify-center">
+                <div className="flex flex-col justify-center pt-[70px] sm:pt-[40px]">
                   <form className="space-y-6">
                     <div>
                       <label
