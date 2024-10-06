@@ -5,6 +5,8 @@ import MainNavBar from "@/components/mainNavBar";
 import CategoryFilter from "@/components/filter";
 import Card from "@/components/card";
 import { useState } from "react";
+import React, { useRef, FormEvent } from 'react';
+import emailjs from '@emailjs/browser';
 
 const poppins1 = Poppins({ weight: "100", subsets: ["latin"] });
 const poppins2 = Poppins({ weight: "200", subsets: ["latin"] });
@@ -18,6 +20,28 @@ const poppins7 = Poppins({ weight: "700", subsets: ["latin"] });
 const categories = ["UI/UX", "Swift", "Web", "ML"];
 
 export default function Home() {
+
+  const form = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+
+    if (form.current) {
+      emailjs
+        .sendForm('service_ogkst05', 'template_t9urzgm', form.current, {
+          publicKey: 'mH9V7Z_Kh9KMP8dn5',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    }
+  };
+
   const [selectedCategory, setSelectedCategory] = useState<string>(
     categories[0]
   );
@@ -447,7 +471,7 @@ export default function Home() {
 
                 {/* Right Section - Contact Form */}
                 <div className="flex flex-col justify-center pt-[70px] sm:pt-[40px]">
-                  <form className="space-y-6">
+                  <form ref={form} onSubmit={sendEmail} className="space-y-6">
                     <div>
                       <label
                         htmlFor="name"
@@ -458,6 +482,7 @@ export default function Home() {
                       <input
                         type="text"
                         id="name"
+                        name="name"
                         className="w-full p-4 border border-gray-700 rounded-[50px] bg-transparent"
                         placeholder="Name"
                       />
@@ -471,6 +496,7 @@ export default function Home() {
                       </label>
                       <input
                         type="text"
+                        name="profession"
                         id="profession"
                         className="w-full p-4 border border-gray-700 rounded-[50px] bg-transparent"
                         placeholder="Profession"
@@ -485,6 +511,7 @@ export default function Home() {
                       </label>
                       <input
                         type="email"
+                        name="email"
                         id="email"
                         className="w-full p-4 border border-gray-700 rounded-[50px] bg-transparent"
                         placeholder="Email"
@@ -499,6 +526,7 @@ export default function Home() {
                       </label>
                       <textarea
                         id="message"
+                        name="message"
                         rows={4}
                         className="w-full p-4 border border-gray-700 rounded-[25px] bg-transparent"
                         placeholder="Message"
@@ -506,6 +534,7 @@ export default function Home() {
                     </div>
                     <button
                       type="submit"
+                      value="send"
                       className="w-full py-3 bg-[#FF4401] text-white font-bold rounded-[50px] hover:bg-orange-600"
                     >
                       SEND
