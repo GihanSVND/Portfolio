@@ -110,7 +110,7 @@ export default function Home() {
                   investment pitch.
                 </li>
                 <li>
-                  Precondition: The entrepreneur's profile is complete, and the
+                  Precondition: The entrepreneur`&apos;`s profile is complete, and the
                   pitch is approved by the platform administrator.
                 </li>
                 <li>Flow of Events</li>
