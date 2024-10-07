@@ -338,7 +338,7 @@ export default function Home() {
                     image="/Binvesto.png"
                     title="BINVESTO"
                     description="Website serve as a central platform for large and small businesses to grow their capital."
-                    seeMoreLink="https://example.com"
+                    seeMoreLink="/binvesto"
                   />
                 </div>
                 <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
