@@ -1,7 +1,7 @@
 "use client";
 
 import { Poppins } from "next/font/google";
-
+import Image from "next/image";
 import React from "react";
 
 import Link from "next/link";
@@ -27,9 +27,17 @@ export default function Home() {
             <h1 className="text-4xl font-bold text-right text-[#FF4401] mb-6">
               Use Case
             </h1>
-            <h1 className="text-[100px] text-center mb-6">BINVESTO</h1>
+            <h1 className=" text-[60px] md:text-[100px] text-center mb-6">BINVESTO</h1>
+            <Image
+              src="/Binvesto_ui.png"
+              alt="File icon"
+              width={1200}
+              height={900}
+              className="transform scale-100 transition-transform duration-100 ease-out rounded-[20px]"
+            />
 
-            <section className="mb-8">
+
+            <section className="mb-8 mt-[50px]">
               <h2 className="text-2xl font-semibold text-[#FF4401] mb-4">
                 Overview
               </h2>

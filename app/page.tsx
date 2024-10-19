@@ -54,7 +54,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`${poppins2.className} pt-[50px]`}>
+    <div className={`${poppins2.className} `}>
       <div>
         <MainNavBar></MainNavBar>
         <div className="bg-black">
@@ -89,7 +89,7 @@ export default function Home() {
 
             {/* Large Text */}
             <h1
-              className={`${poppins7.className} absolute z-0 text-[80px] sm:text-[100px] md:text-[200px] lg:text-[300px] font-extrabold text-gray-300 transform -translate-y-[210px]`}
+              className={`${poppins7.className} absolute z-0 text-[80px] sm:text-[100px] md:text-[200px] lg:text-[300px] font-extrabold text-gray-300 transform -translate-y-[210px] pt-[50px]`}
             >
               THINKER
               <span className="text-[#FF4401]">.</span>
