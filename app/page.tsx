@@ -421,49 +421,49 @@ export default function Home() {
                     <button
                       className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
                       onClick={() =>
-                        window.open("https://example.com", "_blank")
+                        window.open("https://www.linkedin.com/in/gihan-savinda-1a40b01a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", "_blank")
                       }
                     >
                       <img
-                        src="/Swift.png"
+                        src="/LinkedIn.png"
                         alt="Icon 1"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover rounded-lg"
                       />
                     </button>
                     <button
                       className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
                       onClick={() =>
-                        window.open("https://example.com", "_blank")
+                        window.open("https://github.com/GihanSVND", "_blank")
                       }
                     >
                       <img
-                        src="/Swift.png"
+                        src="/Github.png"
                         alt="Icon 2"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover rounded-lg"
                       />
                     </button>
                     <button
                       className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
                       onClick={() =>
-                        window.open("https://example.com", "_blank")
+                        window.open("https://dribbble.com/GIhanSVND", "_blank")
                       }
                     >
                       <img
-                        src="/Swift.png"
+                        src="/Dribble.png"
                         alt="Icon 3"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover rounded-lg"
                       />
                     </button>
                     <button
                       className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
                       onClick={() =>
-                        window.open("https://example.com", "_blank")
+                        window.open("https://dribbble.com/GIhanSVND", "_blank")
                       }
                     >
                       <img
-                        src="/Swift.png"
+                        src="/Behance.png"
                         alt="Icon 4"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover rounded-lg"
                       />
                     </button>
                   </div>
@@ -492,7 +492,7 @@ export default function Home() {
                         htmlFor="profession"
                         className="block text-lg font-medium mb-2"
                       >
-                        Profession
+                        Your Profession
                       </label>
                       <input
                         type="text"

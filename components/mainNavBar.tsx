@@ -37,7 +37,7 @@ const Navbar = () => {
   }, [navItems]);
 
   return (
-    <nav className="fixed top-0 left-0 w-full flex justify-center space-x-[20px] sm:space-x-[50px] md:space-x-[100px] py-4 backdrop-blur-lg bg-black/50 z-50 transition-all duration-300 ease-in-out">
+    <nav className="fixed top-0 left-0 w-full flex justify-center space-x-[10px] sm:space-x-[50px] md:space-x-[100px] py-4 backdrop-blur-lg bg-black/50 z-50 transition-all duration-300 ease-in-out">
       {navItems.map((item) => (
         <a
           key={item.id}
@@ -47,7 +47,7 @@ const Navbar = () => {
             activeIndex === item.id
               ? 'bg-[#FF4401] text-white font-semibold scale-110'
               : 'text-white font-light'
-          } px-4 py-2 rounded-full transition-all duration-300 ease-in-out transform hover:scale-105`}
+          } px-4 py-2 rounded-full transition-all duration-300 ease-in-out transform hover:scale-100`}
         >
           {item.name}
         </a>
