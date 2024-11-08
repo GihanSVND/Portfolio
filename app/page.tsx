@@ -2,11 +2,13 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import MainNavBar from "@/components/mainNavBar";
+import Footer from "@/components/footer";
 import CategoryFilter from "@/components/filter";
 import Card from "@/components/card";
 import { useState } from "react";
-import React, { useRef, FormEvent } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useRef, FormEvent } from "react";
+import emailjs from "@emailjs/browser";
+import { FaDownload } from "react-icons/fa";
 
 const poppins1 = Poppins({ weight: "100", subsets: ["latin"] });
 const poppins2 = Poppins({ weight: "200", subsets: ["latin"] });
@@ -20,7 +22,6 @@ const poppins7 = Poppins({ weight: "700", subsets: ["latin"] });
 const categories = ["UI/UX", "Swift", "Web", "ML"];
 
 export default function Home() {
-
   const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: FormEvent) => {
@@ -28,16 +29,16 @@ export default function Home() {
 
     if (form.current) {
       emailjs
-        .sendForm('service_ogkst05', 'template_t9urzgm', form.current, {
-          publicKey: 'mH9V7Z_Kh9KMP8dn5',
+        .sendForm("service_ogkst05", "template_t9urzgm", form.current, {
+          publicKey: "mH9V7Z_Kh9KMP8dn5",
         })
         .then(
           () => {
-            console.log('SUCCESS!');
+            console.log("SUCCESS!");
           },
           (error) => {
-            console.log('FAILED...', error.text);
-          },
+            console.log("FAILED...", error.text);
+          }
         );
     }
   };
@@ -63,7 +64,7 @@ export default function Home() {
             {/* Bouncing SVG Icon */}
             <div className="translate-y-[630px] z-40">
               <svg
-                className="animate-bounce w-6 h-6 md:w-8 md:h-8 lg:w-8 lg:h-8 "
+                className="animate-bounce text-[#ffffff] w-6 h-6 md:w-8 md:h-8 lg:w-8 lg:h-8 "
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -89,7 +90,7 @@ export default function Home() {
 
             {/* Large Text */}
             <h1
-              className={`${poppins7.className} absolute z-0 text-[80px] sm:text-[100px] md:text-[200px] lg:text-[300px] font-extrabold text-gray-300 transform -translate-y-[210px] pt-[50px]`}
+              className={`${poppins7.className} absolute z-0 text-[80px] sm:text-[100px] md:text-[200px] lg:text-[300px] font-extrabold text-gray-300 transform -translate-y-[210px] pt-[100px]`}
             >
               THINKER
               <span className="text-[#FF4401]">.</span>
@@ -105,14 +106,14 @@ export default function Home() {
                   <div className="relative bottom-16 w-[90px] border-t-2 border-[#FF4401] lg:translate-y-[-780px] mb-4 md:absolute md:-translate-y-[600px] "></div>
 
                   {/* "Love UI/UX" and "Develop Technology" Text */}
-                  <p className="text-[24px] md:text-[30px]">
+                  <p className="text-[24px] text-[#ffffff] md:text-[30px]">
                     Love
                     <span className={`${poppins7.className} text-[#FF4401]`}>
                       {" "}
                       UI/UX
                     </span>
                   </p>
-                  <p className="text-[40px] md:text-[50px]">
+                  <p className="text-[40px] text-[#ffffff] md:text-[50px]">
                     <span className={`${poppins7.className} text-[#FF4401]`}>
                       {" "}
                       Develop
@@ -122,7 +123,7 @@ export default function Home() {
 
                   {/* "Hello! I am Gihan Savinda" Text */}
                   <div className="md:translate-y-[250px]">
-                    <p className="text-[20px] md:text-[30px]">
+                    <p className="text-[20px] text-[#ffffff] md:text-[30px]">
                       Hello! I am
                       <span className={`${poppins7.className} text-[#FF4401]`}>
                         {" "}
@@ -141,7 +142,7 @@ export default function Home() {
 
                   {/* Move the "Design" Text After the Introduction on Small Screens */}
                   <p
-                    className={`${poppins1.className} text-[100px] md:text-[170px] transform translate-y-[10px] md:translate-y-[-160px] transition-transform duration-500 ease-out`}
+                    className={`${poppins1.className} text-[100px] text-[#ffffff] md:text-[170px] transform translate-y-[10px] md:translate-y-[-160px] transition-transform duration-500 ease-out`}
                   >
                     Design
                   </p>
@@ -280,9 +281,9 @@ export default function Home() {
                           </svg>
                           <div>
                             <h3
-                              className={`${poppins7.className} text-[20px] sm:text-[30px] font-bold text-[#FF4401]`}
+                              className={`${poppins7.className} text-[18px] sm:text-[30px] font-bold text-[#FF4401]`}
                             >
-                              Logo Designer
+                              Graphic Designer
                             </h3>
                             <p className={`${poppins4.className} text-sm`}>
                               CrewGen - Full time
@@ -421,7 +422,10 @@ export default function Home() {
                     <button
                       className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
                       onClick={() =>
-                        window.open("https://www.linkedin.com/in/gihan-savinda-1a40b01a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", "_blank")
+                        window.open(
+                          "https://www.linkedin.com/in/gihan-savinda-1a40b01a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+                          "_blank"
+                        )
                       }
                     >
                       <img
@@ -466,6 +470,18 @@ export default function Home() {
                         className="w-full h-full object-cover rounded-lg"
                       />
                     </button>
+                  </div>
+                  {/* Download CV Button */}
+                  <div className="pt-[40px]">
+                  <button
+                    className="bg-[#FF4401] text-white font-semibold px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-[#e63900] transition-all duration-300"
+                    onClick={() =>
+                      window.open("/Gihan_Savinda.pdf", "_blank")
+                    }
+                  >
+                    <FaDownload className="text-white" /> {/* Download icon */}
+                    <span>Download my CV</span>
+                  </button>
                   </div>
                 </div>
 
@@ -543,6 +559,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="pt-[100px]">
+            <Footer></Footer>
           </div>
         </div>
       </div>
