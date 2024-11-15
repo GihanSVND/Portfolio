@@ -45,9 +45,9 @@ const Navbar = () => {
           onClick={() => setActiveIndex(item.id)}
           className={`${
             activeIndex === item.id
-              ? 'bg-[#FF4401] text-white font-semibold scale-110'
-              : 'text-white font-light'
-          } px-4 py-2 rounded-full transition-all duration-300 ease-in-out transform hover:scale-100`}
+              ? 'bg-[#FF4401] text-white font-semibold'
+              : 'text-white font-semibold'
+          } px-4 py-2 rounded-full transition-all duration-300 ease-in-out transform hover:scale-100 text-[13px]`}
         >
           {item.name}
         </a>

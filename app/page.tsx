@@ -281,7 +281,7 @@ export default function Home() {
                           </svg>
                           <div>
                             <h3
-                              className={`${poppins7.className} text-[18px] sm:text-[30px] font-bold text-[#FF4401]`}
+                              className={`${poppins7.className} text-[16px] sm:text-[26px] font-bold text-[#FF4401]`}
                             >
                               Graphic Designer
                             </h3>
