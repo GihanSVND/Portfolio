@@ -62,7 +62,7 @@ export default function Home() {
           {/* Main Section */}
           <div className="flex flex-col justify-center items-center h-screen relative">
             {/* Bouncing SVG Icon */}
-            <div className="translate-y-[630px] z-40">
+            <div className="translate-y-[600px] z-40">
               <svg
                 className="animate-bounce text-[#ffffff] w-6 h-6 md:w-8 md:h-8 lg:w-8 lg:h-8 "
                 xmlns="http://www.w3.org/2000/svg"
@@ -85,12 +85,12 @@ export default function Home() {
               alt="File icon"
               width={600}
               height={600}
-              className="z-10 transform scale-100 -translate-y-[-100px] transition-transform duration-100 ease-out sm:w-[600px] sm:h-[600px] md:w-[600px] md:h-[600px] lg:w-[600px] lg:h-[600px]"
+              className="z-10 transform scale-100 translate-y-[85px] sm-translate-y-[-100px] transition-transform duration-100 ease-out sm:w-[600px] sm:h-[600px] md:w-[600px] md:h-[600px] lg:w-[600px] lg:h-[600px]"
             />
 
             {/* Large Text */}
             <h1
-              className={`${poppins7.className} absolute z-0 text-[80px] sm:text-[100px] md:text-[200px] lg:text-[300px] font-extrabold text-gray-300 transform -translate-y-[210px] pt-[100px]`}
+              className={`${poppins7.className} absolute z-0 text-[80px] sm:text-[100px] md:text-[200px] lg:text-[300px] font-extrabold text-gray-300 transform translate-y-[-270px] sm-translate-y-[210px] pt-[200px]`}
             >
               THINKER
               <span className="text-[#FF4401]">.</span>
@@ -106,14 +106,14 @@ export default function Home() {
                   <div className="relative bottom-16 w-[90px] border-t-2 border-[#FF4401] lg:translate-y-[-780px] mb-4 md:absolute md:-translate-y-[600px] "></div>
 
                   {/* "Love UI/UX" and "Develop Technology" Text */}
-                  <p className="text-[24px] text-[#ffffff] md:text-[30px]">
+                  <p className="text-[20px] text-[#ffffff] md:text-[30px]">
                     Love
                     <span className={`${poppins7.className} text-[#FF4401]`}>
                       {" "}
                       UI/UX
                     </span>
                   </p>
-                  <p className="text-[40px] text-[#ffffff] md:text-[50px]">
+                  <p className="text-[32px] text-[#ffffff] md:text-[50px]">
                     <span className={`${poppins7.className} text-[#FF4401]`}>
                       {" "}
                       Develop
@@ -123,7 +123,7 @@ export default function Home() {
 
                   {/* "Hello! I am Gihan Savinda" Text */}
                   <div className="md:translate-y-[250px]">
-                    <p className="text-[20px] text-[#ffffff] md:text-[30px]">
+                    <p className="text-[16px] text-[#ffffff] md:text-[30px]">
                       Hello! I am
                       <span className={`${poppins7.className} text-[#FF4401]`}>
                         {" "}
@@ -339,7 +339,7 @@ export default function Home() {
                     image="/Binvesto.png"
                     title="BINVESTO"
                     description="Website serve as a central platform for large and small businesses to grow their capital."
-                    seeMoreLink="/binvesto"
+                    seeMoreLink="https://www.behance.net/gallery/212224303/BINVESTO"
                   />
                 </div>
                 <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
@@ -347,7 +347,7 @@ export default function Home() {
                     image="/Travlo.png"
                     title="TRAVLO"
                     description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
-                    seeMoreLink="https://example.com"
+                    seeMoreLink="https://www.behance.net/gallery/212224303/BINVESTO"
                   />
                 </div>
               </div>
@@ -461,7 +461,7 @@ export default function Home() {
                     <button
                       className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
                       onClick={() =>
-                        window.open("https://dribbble.com/GIhanSVND", "_blank")
+                        window.open("https://www.behance.net/gihansavinda", "_blank")
                       }
                     >
                       <img

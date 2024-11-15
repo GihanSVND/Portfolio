@@ -15,7 +15,7 @@ const CategoryFilter: React.FC<CategoryFilterProps> = ({ categories, onSelectCat
   };
 
   return (
-    <div className="flex justify-center space-x-[70px] sm:space-x-[170px] text-white text-lg">
+    <div className="flex justify-center space-x-[40px] sm:space-x-[170px] text-white text-[16px]">
       {categories.map((category) => (
         <div
           key={category}
