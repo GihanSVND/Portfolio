@@ -9,6 +9,7 @@ import { useState } from "react";
 import React, { useRef, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import { FaDownload } from "react-icons/fa";
+import { motion } from "motion/react";
 
 const poppins1 = Poppins({ weight: "100", subsets: ["latin"] });
 const poppins2 = Poppins({ weight: "200", subsets: ["latin"] });
@@ -79,22 +80,45 @@ export default function Home() {
               </svg>
             </div>
 
-            {/* Main Image */}
-            <Image
-              src="/thinker.png"
-              alt="File icon"
-              width={600}
-              height={600}
-              className="z-10 transform scale-100 translate-y-[85px] sm-translate-y-[-100px] transition-transform duration-100 ease-out sm:w-[600px] sm:h-[600px] md:w-[600px] md:h-[600px] lg:w-[600px] lg:h-[600px]"
-            />
-
-            {/* Large Text */}
-            <h1
-              className={`${poppins7.className} absolute z-0 text-[80px] sm:text-[100px] md:text-[200px] lg:text-[300px] font-extrabold text-gray-300 transform translate-y-[-270px] sm-translate-y-[210px] pt-[200px]`}
-            >
-              THINKER
-              <span className="text-[#FF4401]">.</span>
-            </h1>
+            <div className="flex flex-col justify-center items-center h-screen relative">
+              {/* Main Image with Animation */}
+              <motion.div
+                initial={{ scale: 1, y: 0, opacity: 0 }}
+                animate={{ scale: 1, y: -20, opacity: 1 }}
+                transition={{
+                  delay: 0.4,
+                  duration: 1.2, // Total animation time
+                  ease: [0.15, 0.85, 0.35, 1], // Fast start and slow end
+                }}
+                className="z-10"
+              >
+                <Image
+                  src="/thinker.png"
+                  alt="File icon"
+                  width={600}
+                  height={600}
+                  className="transform scale-100 translate-y-[85px] sm-translate-y-[-100px] transition-transform duration-100 ease-out sm:w-[600px] sm:h-[600px] md:w-[600px] md:h-[600px] lg:w-[600px] lg:h-[600px]"
+                />
+              </motion.div>
+              {/* Large Text */}
+              <h1
+                className={`${poppins7.className} absolute z-0 text-[80px] sm:text-[100px] md:text-[200px] lg:text-[300px] font-extrabold text-gray-300 transform translate-y-[-270px] sm-translate-y-[210px] pt-[200px]`}
+              >
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                     // Delay of 0.5 seconds
+                    duration: 1.2, // Duration of the animation
+                    ease: [0.15, 0.85, 0.35, 1], // Fast start, slow end
+                  }}
+                >
+                  THINKER
+                  <span className="text-[#FF4401]">.</span>
+                </motion.span>
+              </h1>
+              ;
+            </div>
           </div>
 
           {/* New Section for Grid */}
@@ -461,7 +485,10 @@ export default function Home() {
                     <button
                       className="bg-gray-600 w-12 h-12 rounded-full hover:bg-gray-500"
                       onClick={() =>
-                        window.open("https://www.behance.net/gihansavinda", "_blank")
+                        window.open(
+                          "https://www.behance.net/gihansavinda",
+                          "_blank"
+                        )
                       }
                     >
                       <img
@@ -473,15 +500,16 @@ export default function Home() {
                   </div>
                   {/* Download CV Button */}
                   <div className="pt-[40px]">
-                  <button
-                    className="bg-[#FF4401] text-white font-semibold px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-[#e63900] transition-all duration-300"
-                    onClick={() =>
-                      window.open("/Gihan_Savinda.pdf", "_blank")
-                    }
-                  >
-                    <FaDownload className="text-white" /> {/* Download icon */}
-                    <span>Download my CV</span>
-                  </button>
+                    <button
+                      className="bg-[#FF4401] text-white font-semibold px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-[#e63900] transition-all duration-300"
+                      onClick={() =>
+                        window.open("/Gihan_Savinda.pdf", "_blank")
+                      }
+                    >
+                      <FaDownload className="text-white" />{" "}
+                      {/* Download icon */}
+                      <span>Download my CV</span>
+                    </button>
                   </div>
                 </div>
 
