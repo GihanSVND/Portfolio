@@ -355,7 +355,7 @@ export default function Home() {
                     image="/SOCS.png"
                     title="Official Website of the Society of Computer Sciences – SUSL "
                     description="Website serves as a central platform for disseminating information, facilitating communication among members, and promoting the society's activities"
-                    seeMoreLink="https://example.com"
+                    seeMoreLink="https://www.figma.com/proto/mcRc40moj1wu2vbKHtTbLg/SOCS_Connected?page-id=0%3A1&node-id=0-469&node-type=canvas&viewport=-1553%2C543%2C0.52&t=Dru35dVr9xHpoAHL-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A49"
                   />
                 </div>
                 <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
@@ -371,7 +371,7 @@ export default function Home() {
                     image="/Travlo.png"
                     title="TRAVLO"
                     description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
-                    seeMoreLink="https://www.behance.net/gallery/212224303/BINVESTO"
+                    seeMoreLink="https://www.figma.com/design/YBYp3T6XmYZHU25oPzw7sD/TRAVLO?node-id=0-1&t=K80hYVQvdKjL8iGn-1"
                   />
                 </div>
               </div>
@@ -383,7 +383,7 @@ export default function Home() {
                     image="/CLAWS.png"
                     title="CLAWS – Cultivated Lands Animal Warning System"
                     description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
-                    seeMoreLink="https://example.com"
+                    seeMoreLink="https://github.com/GihanSVND/CLAWS_FrontEnd"
                   />
                 </div>
                 <div className="py-[50px] px-[10px] sm:px-[30px] md:px-[80px] lg:px-[250px] flex justify-items-center">
@@ -391,7 +391,7 @@ export default function Home() {
                     image="/TailCast.png"
                     title="TailCast"
                     description="AI powered IOS app that work as an All-in-one library including e-books, generate short stories and real-time audio books."
-                    seeMoreLink="https://example.com"
+                    seeMoreLink="https://github.com/GihanSVND/TailCast"
                   />
                 </div>
               </div>
@@ -403,7 +403,7 @@ export default function Home() {
                   image="/SOCS.png"
                   title="Official Website of the Society of Computer Sciences – SUSL "
                   description="Website serves as a central platform for disseminating information, facilitating communication among members, and promoting the society's activities"
-                  seeMoreLink="https://example.com"
+                  seeMoreLink="https://www.figma.com/proto/mcRc40moj1wu2vbKHtTbLg/SOCS_Connected?page-id=0%3A1&node-id=0-469&node-type=canvas&viewport=-1553%2C543%2C0.52&t=Dru35dVr9xHpoAHL-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A49"
                 />
               </div>
             )}
@@ -413,7 +413,7 @@ export default function Home() {
                   image="/CLAWS.png"
                   title="CLAWS – Cultivated Lands Animal Warning System"
                   description="Embedded system that identifies harmful animals for crops in Sri Lanka with machine learning models and cloud computing technologies. "
-                  seeMoreLink="https://example.com"
+                  seeMoreLink="https://github.com/GihanSVND/CLAWS_FrontEnd"
                 />
               </div>
             )}
