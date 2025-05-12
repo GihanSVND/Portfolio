@@ -35,7 +35,7 @@ const ThinkerSection: React.FC<ThinkerSectionProps> = ({ kugileFont }) => {
   }, []);
 
   return (
-    <section className="flex flex-col items-center justify-center py-16 px-4 bg-[#f5f5f0] min-h-screen">
+    <section className="flex flex-col items-center justify-center py-16 px-4 bg-[#ECE8D5] min-h-screen">
       <div className="max-w-6xl mx-auto text-center">
         {/* THINKER heading */}
         <motion.h1 
@@ -90,7 +90,7 @@ const ThinkerSection: React.FC<ThinkerSectionProps> = ({ kugileFont }) => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.8 }}
         >
-          The pioneer who build the future. He enjoy creating delightful, human centered digital experiences.
+          The pioneer who build the future. He enjoys creating delightful, human centered digital experiences.
         </motion.p>
         
         {/* Summon button */}
