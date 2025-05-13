@@ -16,7 +16,7 @@ export default function Home() {
     <main>
       <div className="bg-[#ECE8D5] flex flex-col items-center justify-center ">
         <ThinkerSection kugileFont={kugileFont} />
-        // Example usage
+        
         
         <Image
           src={"/book.png"}
