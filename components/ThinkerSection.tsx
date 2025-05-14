@@ -39,7 +39,7 @@ const ThinkerSection: React.FC<ThinkerSectionProps> = ({ kugileFont }) => {
       <div className="max-w-6xl mx-auto text-center">
         {/* THINKER heading */}
         <motion.h1 
-          className={`${kugileFont.className} text-8xl text-[#2a0e04] md:text-9xl lg:text-[15rem] leading-none mb-8 tracking-tighter`}
+          className={`${kugileFont.className} text-7xl text-[#2a0e04] md:text-9xl lg:text-[15rem] leading-none mt-8 -mb-2 tracking-tighter`}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
