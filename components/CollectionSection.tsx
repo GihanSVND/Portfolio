@@ -136,7 +136,7 @@ const CollectionSection: React.FC<CollectionSectionProps> = ({
   }, [duplicatedItems, items.length, itemWidth, isMobile]);
 
   return (
-    <section className="py-8 sm:py-10 md:py-12 px-0 bg-[#ECE8D5] overflow-hidden w-full">
+    <section className="py-8 sm:py-10 md:py-12 px-0 bg-[#ECE8D5] overflow-hidden w-full mb-[100px] md:mb-[150px]">
       {/* Title */}
       <motion.h2
         className={`${kugileFont.className} text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mb-8 sm:mb-10 md:mb-12 text-[#2a0e04]`}
@@ -200,6 +200,7 @@ const CollectionSection: React.FC<CollectionSectionProps> = ({
 
       {/* Visit gallery button */}
       <div className="flex justify-center mt-8 sm:mt-10">
+        
         <motion.a
           href="/gallery"
           className={`${playfair.className} bg-[#2a0e04] text-[#f5f5f0] px-4 sm:px-6 py-2 sm:py-2.5 rounded-md text-sm sm:text-base hover:bg-[#3a2f25] transition-colors duration-300`}

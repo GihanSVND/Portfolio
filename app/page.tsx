@@ -7,6 +7,7 @@ import localFont from "next/font/local";
 
 import ThinkerSection from "../components/ThinkerSection";
 
+
 const kugileFont = localFont({
   src: "/fonts/Kugile.woff",
 });
