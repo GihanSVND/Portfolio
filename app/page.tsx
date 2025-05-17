@@ -1,16 +1,41 @@
 "use client";
 
 import Image from "next/image";
-import CollectionSection from "@/components/CollectionSection";
+
 
 import localFont from "next/font/local";
 
 import ThinkerSection from "../components/ThinkerSection";
-
+import InfiniteCarousel from '@/components/InfiniteCarousel';
 
 const kugileFont = localFont({
   src: "/fonts/Kugile.woff",
 });
+
+const cardData = [
+  {
+    id: 1,
+    thumbImage: "/Thumb.png",
+    title: "SOCS - Official Website",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+    link: "https://example.com/link3"
+  },
+  {
+    id: 2,
+    thumbImage: "/Thumb.png",
+    title: "SOCS",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+    link: "https://example.com/link3"
+  },
+  {
+    id: 3,
+    thumbImage: "/Thumb.png",
+    title: "SOCS - Official Website",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
+    link: "https://example.com/link3"
+  },
+  // Add more cards...
+];
 
 export default function Home() {
   return (
@@ -27,33 +52,12 @@ export default function Home() {
           className="max-w-full h-auto transition-opacity duration-300"
           priority
         />
-        <CollectionSection
-          kugileFont={kugileFont}
-          items={[
-            {
-              id: 1,
-              image: "/col1.png",
-              caption: "Socs",
-              url: "/your-link-destination",
-            },
-            {
-              id: 2,
-              image: "/col1.png",
-              caption: "Your Custom Caption",
-              url: "/your-link-destination",
-            },
-            {
-              id: 3,
-              image: "/col1.png",
-              caption: "s",
-              url: "/your-link-destination",
-            },
-            // Add more items as needed
-          ]}
-        />
+        
+        <InfiniteCarousel cards={cardData} speed={30} gap={24} />
         <h1
           className={`${kugileFont.className} text-4xl text-[#2a0e04] md:text-5xl mb-4`}
         >
+          
           {" "}
           - His Journey -{" "}
         </h1>
