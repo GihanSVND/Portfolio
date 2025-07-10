@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -9,7 +9,7 @@ interface ThinkerSectionProps {
 }
 
 const ThinkerSection: React.FC<ThinkerSectionProps> = ({ kugileFont }) => {
-  const [isHovering, setIsHovering] = useState(false);
+  
 
   return (
     <section className="relative flex flex-col items-center justify-center py-16 px-4 bg-[#FFFFFF] ">
