@@ -6,7 +6,7 @@ const Hero = () => {
     <section className="flex flex-col items-center justify-center min-h-screen bg-white font-[Ivy] px-4">
       <div className="text-left leading-snug">
         <p className="text-[32px] md:text-[50px] font-medium text-gray-400 -mt-1">
-          Hey, I'm 
+          Hey, I&apos;m 
           <span className="inline-block w-[100px] md:w-[150px] mx-2 align-middle">
             <Image
               src="/1.png"
