@@ -66,6 +66,13 @@
   }
 }
 
+@font-face {
+  font-family: 'Ivy';
+  src: url('/fonts/Ivy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 
 @layer base {
