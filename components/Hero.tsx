@@ -1,11 +1,16 @@
 // components/Hero.tsx
 import Image from "next/image";
+import localFont from "next/font/local";
+
+const ivyfont = localFont({
+  src: "../app/fonts/Ivy.woff",
+})
 
 const Hero = () => {
   return (
     <section className="flex flex-col items-center justify-center min-h-screen bg-white font-[Ivy] px-4">
-      <div className="text-left leading-snug">
-        <p className="text-[32px] md:text-[50px] font-medium text-gray-400 -mt-2">
+      <div className={`text-left leading-snug ${ivyfont.className}`}>
+        <p className={`text-[32px] md:text-[50px] font-medium text-gray-400 -mt-2 `}>
           Hey, I&apos;m 
           <span className="inline-block w-[100px] md:w-[150px] mx-2 align-middle">
             <Image

@@ -2,6 +2,12 @@
 import Image from "next/image";
 import { FC } from "react";
 
+import localFont from "next/font/local";
+
+const poppins = localFont({
+  src: "../app/fonts/Poppins.woff",
+});
+
 interface CardProps {
   title: string;
   description: string;
@@ -10,7 +16,13 @@ interface CardProps {
   index: string;
 }
 
-const Card: FC<CardProps> = ({ title, description, imageSrc, imageAlt = "", index }) => {
+const Card: FC<CardProps> = ({
+  title,
+  description,
+  imageSrc,
+  imageAlt = "",
+  index,
+}) => {
   return (
     <div className="relative rounded-2xl bg-[#F8F8F8] p-5 w-full max-w-md shadow-[0_4px_8px_rgba(0,0,0,0.15)] overflow-hidden">
       {/* Inner white top shadow */}
@@ -18,24 +30,28 @@ const Card: FC<CardProps> = ({ title, description, imageSrc, imageAlt = "", inde
 
       {/* Top Icon */}
       <div className="flex items-start justify-between">
-        <div className="w-6 h-6 bg-black text-white flex items-center justify-center rounded-md shadow-md">
+        <div className="w-[40px] h-[40px]  bg-gradient-to-b from-[#4A4A4A] via-[#2d2d2d] to-black text-white flex items-center justify-center rounded-xl shadow-md">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="w-4 h-4"
             fill="none"
             viewBox="0 0 24 24"
-            stroke="white"
-            strokeWidth={2}
+            strokeWidth={1.5}
+            stroke="currentColor"
+            className="size-6"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h4a1 1 0 011 1v9a1 1 0 01-1 1h-9a1 1 0 01-1-1v-4m0-4L16 16" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            />
           </svg>
         </div>
       </div>
 
       {/* Title & Description */}
-      <div className="mt-4">
-        <h2 className="text-lg font-semibold font-['Inter'] text-black">{title}</h2>
-        <p className="text-sm text-gray-600 mt-1 font-['Inter']">{description}</p>
+      <div className={`mt-4 ${poppins.className}`}>
+        <h2 className="text-lg font-extrabold text-black">{title}</h2>
+        <p className="text-sm text-gray-600 mt-1 ">{description}</p>
       </div>
 
       {/* Divider */}

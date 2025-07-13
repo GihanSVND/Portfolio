@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import ThinkerSection from "../components/ThinkerSection";
 import Hero from "../components/Hero";
 import Card from "../components/card"
+import GradientButton from "../components/GradientButton";
 
 const kugileFont = localFont({
   src: "/fonts/Kugile.woff",
@@ -27,13 +28,21 @@ export default function Home() {
           <Hero />
         </motion.div>
       </div>
+      <div className="flex justify-center items-center">
+      <GradientButton text="See all" href="/get-started" />
+    </div>
       <div className="flex items-center justify-center min-h-screen">
+        
       <Card
         title="Deploy with Confidence"
         description="Our team develops custom AI systems built around your goals, ensuring safe and reliable deployment."
         imageSrc="/CLAWS.png" // Put this in /public/images
         index="01"
       />
+      
+    </div>
+    <div className="flex justify-center items-center">
+      <GradientButton text="See all" href="/get-started" />
     </div>
     </main>
   );
