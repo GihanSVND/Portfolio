@@ -8,7 +8,7 @@ const ivyfont = localFont({
 
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center justify-center min-h-screen bg-white font-[Ivy] px-4">
+    <section className="flex flex-col items-center justify-center min-h-screen font-[Ivy] px-4">
       <div className={`text-left leading-snug ${ivyfont.className}`}>
         <p className={`text-[32px] md:text-[50px] font-medium text-gray-400 -mt-2 `}>
           Hey, I&apos;m 
