@@ -1,11 +1,12 @@
 // components/Card.tsx
 import Image from "next/image";
 import { FC } from "react";
+import { motion } from "framer-motion";
 
 import localFont from "next/font/local";
 
-const poppins = localFont({
-  src: "../app/fonts/Poppins.woff",
+const satoshi = localFont({
+  src: "../app/fonts/Satoshi.woff",
 });
 
 interface CardProps {
@@ -24,7 +25,14 @@ const Card: FC<CardProps> = ({
   index,
 }) => {
   return (
-    <div className="relative rounded-2xl bg-[#F8F8F8] p-5 w-full max-w-md shadow-[0_4px_8px_rgba(0,0,0,0.15)] overflow-hidden">
+    <motion.div
+            
+            initial={{ filter: "blur(20px)", y: 60 }}
+            whileInView={{ filter: "blur(0px)", y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.4 }}
+          >
+    <div className="relative w-full sm:w-[300px] md:w-[450px] h-auto md:h-[490px] rounded-2xl bg-[#F8F8F8] p-5 shadow-[0_4px_8px_rgba(0,0,0,0.15)] overflow-hidden">
       {/* Inner white top shadow */}
       <div className="pointer-events-none absolute inset-0 rounded-2xl after:content-[''] after:absolute after:top-0 after:left-0 after:right-0 after:h-[20px] after:rounded-t-3xl after:shadow-[inset_0_4px_2px_rgba(255,255,255,1)]"></div>
 
@@ -49,7 +57,7 @@ const Card: FC<CardProps> = ({
       </div>
 
       {/* Title & Description */}
-      <div className={`mt-4 ${poppins.className}`}>
+      <div className={`mt-4 ${satoshi.className}`}>
         <h2 className="text-lg font-extrabold text-black">{title}</h2>
         <p className="text-sm text-gray-600 mt-1 ">{description}</p>
       </div>
@@ -77,6 +85,7 @@ const Card: FC<CardProps> = ({
         />
       </div>
     </div>
+    </motion.div>
   );
 };
 
