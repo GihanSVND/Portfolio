@@ -28,7 +28,7 @@ const ThinkerSection: React.FC<ThinkerSectionProps> = ({ kugileFont }) => {
 
         {/* THINKER heading with lower z-index */}
         <motion.h1
-          className={`${kugileFont.className} text-7xl  text-[#000000] md:text-9xl lg:text-[15rem] leading-none mt-8 -mb-2 tracking-tighter z-10`}
+          className={`${kugileFont.className} text-7xl  text-[#1F1F1F] md:text-9xl lg:text-[15rem] leading-none mt-8 -mb-2 tracking-tighter z-10`}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}

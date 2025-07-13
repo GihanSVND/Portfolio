@@ -72,11 +72,11 @@ const StatisticSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            <h2 className={`text-[150px] sm:text-[170px] font-bold text-black ${satoshi.className}`}>
+            <h2 className={`text-[150px] sm:text-[170px] font-bold text-[#1F1F1F] ${satoshi.className}`}>
               {Math.round(counts[index])}
               {stat.suffix}
             </h2>
-            <p className={`text-gray-500  text-m  -mt-[40px] ${satoshi.className}`}>{stat.label}</p>
+            <p className={`text-gray-500  text-m  -mt-[40px] ${satoshi.className} font-semibold `}>{stat.label}</p>
           </motion.div>
         ))}
       </div>

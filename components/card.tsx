@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 
 import localFont from "next/font/local";
 
-const satoshi = localFont({
-  src: "../app/fonts/Satoshi.woff",
-});
+const satoshim = localFont({
+  src: "../app/fonts/SatoshiMedium.woff",
+})
+
 
 interface CardProps {
   title: string;
@@ -57,7 +58,7 @@ const Card: FC<CardProps> = ({
       </div>
 
       {/* Title & Description */}
-      <div className={`mt-4 ${satoshi.className}`}>
+      <div className={`mt-4 ${satoshim.className}`}>
         <h2 className="text-lg font-extrabold text-black">{title}</h2>
         <p className="text-sm text-gray-600 mt-1 ">{description}</p>
       </div>

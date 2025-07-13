@@ -8,6 +8,7 @@ import Hero from "../components/Hero";
 import GradientButton from "../components/GradientButton";
 import ProjectGrid from "../components/ProjectGrid";
 import StatissticSection from "../components/StatisticSection";
+import ClientBenefits from "../components/ClientBenefits";
 
 const kugileFont = localFont({
   src: "/fonts/Kugile.woff",
@@ -36,6 +37,11 @@ export default function Home() {
         </div>
         <div className="flex items-center justify-center ">
           <GradientButton text="See all" href="/get-started" />
+        </div>
+        <div className="flex items-center justify-center min-h-screen">
+         
+          <ClientBenefits />
+          
         </div>
         <div className="flex justify-center items-center">
           <StatissticSection />

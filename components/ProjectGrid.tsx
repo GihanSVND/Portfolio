@@ -7,6 +7,10 @@ const satoshi = localFont({
   src: "../app/fonts/Satoshi.woff",
 })
 
+const satoshim = localFont({
+  src: "../app/fonts/SatoshiMedium.woff",
+})
+
 const cardsData = [
   {
     title: "Deploy with Confidence",
@@ -27,7 +31,7 @@ const ProjectGrid = () => {
           <span className="w-2 h-2 bg-black rounded-full inline-block"></span>
           My Projects
         </p>
-        <h2 className={`${satoshi.className} text-2xl md:text-[45px] leading-snug mt-3 font-semibold`}>
+        <h2 className={`${satoshim.className} text-2xl md:text-[45px] leading-snug mt-3 `}>
           Things that made <br /> for the future
         </h2>
       </div>
