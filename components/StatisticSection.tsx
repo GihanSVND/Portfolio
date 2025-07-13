@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import localFont from "next/font/local";
 
 const ivy = localFont({
@@ -46,7 +46,7 @@ const StatisticSection = () => {
   useEffect(() => {
     if (!hasAnimated) return;
 
-    const durations = stats.map((s) => 1000 + s.value * 10);
+    
     const steps = 60;
 
     const interval = setInterval(() => {

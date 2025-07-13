@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import ThinkerSection from "../components/ThinkerSection";
 import Hero from "../components/Hero";
 import Card from "../components/card";
-import GradientButton from "../components/GradientButton";
+
 import StatissticSection from "../components/StatisticSection";
 
 const kugileFont = localFont({
