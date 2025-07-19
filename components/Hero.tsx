@@ -79,10 +79,10 @@ const QuoteReveal = () => {
   return (
     <div
       ref={ref}
-      className={`pt-[200px] px-8 sm:px-10 md:px-[120px] max-w-[1300px] relative ${satoshi.className} font-semibold`}
+      className={`pt-[200px] px-8 sm:px-10 md:px-[120px] max-w-[1300px] relative`}
     >
       <motion.div
-        className={`text-[32px] md:text-[43px] leading-[45px] -tracking-[0.02em] text-left `}
+        className={`text-[32px] md:text-[43px] leading-[45px] -tracking-[0.01em] text-left `}
         variants={containerVariants}
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
