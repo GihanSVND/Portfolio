@@ -12,6 +12,12 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* styles/globals.css */
+::selection {
+  background-color: #ffd54f;
+  color: #1a1a1a;
+}
+
 
 @layer base {
   :root {

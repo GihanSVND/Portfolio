@@ -50,9 +50,10 @@ const QuoteReveal = () => {
   const words = quote.split(" ");
 
   return (
+    <div className="px-8 sm:px-10 md:px-[120px] max-w-[1300px]">
     <motion.p
       ref={ref}
-      className={` px-4 sm:px-8  lg:px-20 text-[32px] md:text-[43px] leading-[45px] -tracking-[0.02em]  text-[#1F1F1F] max-w-[900px] mx-0 text-left  font-normal  ${satoshi.className}`}
+      className={` text-[32px] md:text-[43px] leading-[45px] -tracking-[0.02em]  text-[#1F1F1F] sm:mr-[300px] text-left  font-normal  ${satoshi.className}`}
       variants={containerVariants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
@@ -63,6 +64,7 @@ const QuoteReveal = () => {
         </motion.span>
       ))}
     </motion.p>
+    </div>
   );
 };
 

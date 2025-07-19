@@ -1,7 +1,7 @@
 "use client";
 
 import localFont from "next/font/local";
-import { motion } from "framer-motion";
+
 
 import ThinkerSection from "../components/ThinkerSection";
 import Hero from "../components/Hero";
@@ -22,15 +22,12 @@ export default function Home() {
         <div className=" flex flex-col items-center justify-center ">
           <ThinkerSection kugileFont={kugileFont} />
 
-          <motion.div
+          <div
             className="mt-[60px] md:mt-[500px]"
-            initial={{ filter: "blur(20px)", y: 60 }}
-            whileInView={{ filter: "blur(0px)", y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.4 }}
+            
           >
             <Hero />
-          </motion.div>
+          </div>
         </div>
 
         <div className="flex items-center justify-center min-h-screen">
@@ -44,7 +41,7 @@ export default function Home() {
           <ClientBenefits />
           
         </div>
-        <div className="flex">
+        <div className="flex items-center justify-center">
           <QuoteReveal />
         </div>
         <div className="flex justify-center items-center">
