@@ -2,11 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import localFont from "next/font/local";
 
-const satoshi = localFont({
-  src: "../app/fonts/Satoshi.woff",
-})
 
 const dynamicTitles = ["UI/UX DESIGNER", "3D ARTIST", "WEB DEVELOPER", "IOS DEVELOPER"];
 
