@@ -79,7 +79,7 @@ const QuoteReveal = () => {
   return (
     <div
       ref={ref}
-      className="pt-[200px] px-8 sm:px-10 md:px-[120px] max-w-[1300px] relative"
+      className="pt-[200px] px-8 sm:px-10 md:px-[120px] max-w-[1300px] relative font-normal"
     >
       <motion.div
         className={`text-[32px] md:text-[43px] leading-[45px] -tracking-[0.02em] text-left font-normal ${satoshi.className}`}
@@ -88,13 +88,13 @@ const QuoteReveal = () => {
         animate={inView ? "visible" : "hidden"}
       >
         {/* Line 1 */}
-        <div className="flex flex-wrap items-center relative z-10">
+        <div className="flex flex-wrap items-center relative z-10 font-normal">
           {quoteWordsLine1.map((word, i) => {
             if (word.text === "GIHAN.") {
               return (
                 <motion.span
                   key={i}
-                  className="inline-flex items-center mr-2 text-[#1F1F1F] relative"
+                  className="inline-flex items-center mr-2 text-[#1F1F1F] relative font-normal"
                   variants={wordVariants}
                 >
                   {/* Hover-scaling image */}
@@ -130,7 +130,7 @@ const QuoteReveal = () => {
         </div>
 
         {/* Dynamic Title (Animated per letter) */}
-        <div className="mt-1 mb-2 flex flex-wrap overflow-hidden">
+        <div className="mt-1 mb-2 flex flex-wrap overflow-hidden font-normal">
           <AnimatePresence mode="wait">
             <motion.div
               key={dynamicTitles[currentTitleIndex]}
