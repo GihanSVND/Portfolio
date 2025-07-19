@@ -24,14 +24,14 @@ const cardsData = [
 
 const ProjectGrid = () => {
   return (
-    <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-16">
+    <section className="px-4 sm:px-8 md:px-16 lg:px-24 py-16 bg-[#F0F0F0]">
       {/* Heading section */}
-      <div className="text-center mb-12">
-        <p className={`${satoshi.className} text-sm text-black flex justify-center items-center gap-2 font-semibold `}>
-          <span className="w-2 h-2 bg-black rounded-full inline-block"></span>
+      <div className="text-center mb-12 ">
+        <p className={`${satoshi.className} text-sm text-[#1F1F1F] flex justify-center items-center gap-2 font-semibold `}>
+          <span className="w-2 h-2 bg-[#1F1F1F] rounded-full inline-block"></span>
           My Projects
         </p>
-        <h2 className={`${satoshim.className} text-2xl md:text-[45px] leading-snug mt-3 `}>
+        <h2 className={`${satoshim.className} text-2xl md:text-[45px] mt-3 text-[#1F1F1F] leading-[50px] -tracking-[0.02em]`}>
           Things that made <br /> for the future
         </h2>
       </div>

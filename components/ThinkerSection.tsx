@@ -12,7 +12,7 @@ const ThinkerSection: React.FC<ThinkerSectionProps> = ({ kugileFont }) => {
   
 
   return (
-    <section className="relative flex flex-col items-center justify-center py-16 px-4 bg-[#FFFFFF] ">
+    <section className="relative flex flex-col items-center justify-center py-16 px-4 bg-[#F0F0F0] ">
       <div className="relative max-w-6xl mx-auto flex flex-col items-center justify-center">
         {/* Image above the text with higher z-index */}
         <div className="absolute top-1/2 -translate-y-1/8 z-20">

@@ -63,7 +63,7 @@ const StatisticSection = () => {
   }, [hasAnimated]);
 
   return (
-    <section id="stat-section" className="py-16 px-6">
+    <section id="stat-section" className=" px-6">
       <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-left ">
         {stats.map((stat, index) => (
           <motion.div

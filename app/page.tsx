@@ -9,6 +9,7 @@ import GradientButton from "../components/GradientButton";
 import ProjectGrid from "../components/ProjectGrid";
 import StatissticSection from "../components/StatisticSection";
 import ClientBenefits from "../components/ClientBenefits";
+import QuoteReveal from "../components/QuoteReveal";
 
 const kugileFont = localFont({
   src: "/fonts/Kugile.woff",
@@ -17,8 +18,8 @@ const kugileFont = localFont({
 export default function Home() {
   return (
     <main>
-      <div className="px-3">
-        <div className="bg-[#FFFFFF] flex flex-col items-center justify-center ">
+      <div className="px-3 bg-[#F0F0F0]  ">
+        <div className=" flex flex-col items-center justify-center ">
           <ThinkerSection kugileFont={kugileFont} />
 
           <motion.div
@@ -38,10 +39,13 @@ export default function Home() {
         <div className="flex items-center justify-center ">
           <GradientButton text="See all" href="/get-started" />
         </div>
-        <div className="flex items-center justify-center min-h-screen">
+        <div className="flex items-center justify-center ">
          
           <ClientBenefits />
           
+        </div>
+        <div className="flex">
+          <QuoteReveal />
         </div>
         <div className="flex justify-center items-center">
           <StatissticSection />

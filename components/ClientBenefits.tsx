@@ -29,7 +29,7 @@ const benefits = [
   },
   {
     icon: WrenchScrewdriverIcon,
-    title: "Scalable design systems",
+    title: "Scalable designs",
     description:
       "I build reusable design systems that grow with your business and support new features seamlessly.",
   },
@@ -43,8 +43,8 @@ const benefits = [
 
 const ClientBenefits = () => {
   return (
-    <section className="py-20 px-8 sm:px-10 md:px-[190px]">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-10 px-8 sm:px-10 md:px-[120px] max-w-[1300px]">
+      <div className=" ml-0 ">
         {/* Section heading */}
         <div className="text-left mb-16">
           <p
@@ -86,7 +86,7 @@ const ClientBenefits = () => {
                   {benefit.title}
                 </h3>
                 <p
-                  className={`text-gray-500 text-sm leading-relaxed ${satoshim.className}`}
+                  className={`text-gray-500 text-sm ${satoshim.className} leading-4 `}
                 >
                   {benefit.description}
                 </p>
