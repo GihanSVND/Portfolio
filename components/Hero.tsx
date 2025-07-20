@@ -96,8 +96,8 @@ const QuoteReveal = () => {
                   {/* Hover-scaling image */}
                   <motion.div
                     className="relative flex items-center justify-center mr-2"
-                    whileHover={{ scale: 5 }}
-                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    whileHover={{ scale: 3 }}
+                    transition={{ duration: 0.2, ease: "easeInOut" }}
                     style={{ transformOrigin: "center" }}
                   >
                     <motion.img

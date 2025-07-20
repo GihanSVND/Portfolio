@@ -10,6 +10,8 @@ import ProjectGrid from "../components/ProjectGrid";
 import StatissticSection from "../components/StatisticSection";
 import ClientBenefits from "../components/ClientBenefits";
 import QuoteReveal from "../components/QuoteReveal";
+import Scrollingskills from "../components/ScrollingSkills";
+import Sophiecard from "../components/SophieCard";
 
 const kugileFont = localFont({
   src: "/fonts/Kugile.woff",
@@ -46,6 +48,16 @@ export default function Home() {
         </div>
         <div className="flex justify-center items-center">
           <StatissticSection />
+        </div>
+        <div className="flex items-center justify-center ">
+         
+         <Scrollingskills />
+          
+        </div>
+        <div className="flex items-center justify-center ">
+         
+         <Sophiecard />
+          
         </div>
       </div>
     </main>
