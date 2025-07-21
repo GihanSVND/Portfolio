@@ -2,7 +2,6 @@
 
 import localFont from "next/font/local";
 
-
 import ThinkerSection from "../components/ThinkerSection";
 import Hero from "../components/Hero";
 import GradientButton from "../components/GradientButton";
@@ -24,40 +23,32 @@ export default function Home() {
         <div className=" flex flex-col items-center justify-center ">
           <ThinkerSection kugileFont={kugileFont} />
 
-          <div
-            className="mt-[60px] md:mt-[500px]"
-            
-          >
+          <div className="mt-[60px] md:mt-[500px]">
             <Hero />
           </div>
         </div>
-
-        <div className="flex items-center justify-center min-h-screen">
+<div className="py-[50px] sm:py-[100px] md:py-[200px]" >
+        <div className="flex items-center justify-center  ">
           <ProjectGrid />
         </div>
         <div className="flex items-center justify-center ">
           <GradientButton text="See all" href="/get-started" />
         </div>
-        <div className="flex items-center justify-center ">
-         
-          <ClientBenefits />
-          
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center py-[30px]">
+          <ClientBenefits />
+        </div>
+        <div className="flex items-center justify-center py-[30px]">
           <QuoteReveal />
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center py-[30px]">
           <StatissticSection />
         </div>
-        <div className="flex items-center justify-center ">
-         
-         <Scrollingskills />
-          
+        <div className="flex items-center justify-center py-[30px] ">
+          <Scrollingskills />
         </div>
-        <div className="flex items-center justify-center ">
-         
-         <Sophiecard />
-          
+        <div className="flex items-center justify-center py-[50px] sm:py-[100px] md:py-[200px]">
+          <Sophiecard />
         </div>
       </div>
     </main>

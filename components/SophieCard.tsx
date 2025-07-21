@@ -32,7 +32,7 @@ export default function SophieCard() {
           Experience
         </p>
         <h2
-          className={`${satoshim.className} text-2xl md:text-[45px] mt-3 text-[#1F1F1F] leading-[50px] -tracking-[0.02em]`}
+          className={`${satoshim.className} text-4xl md:text-[45px] mt-3 text-[#1F1F1F] leading-[50px] -tracking-[0.02em]`}
         >
           The Timeline
         </h2>
@@ -40,7 +40,7 @@ export default function SophieCard() {
 
       <div className="w-full max-w-[1300px] mx-auto px-4 py-10 flex flex-col lg:flex-row gap-8">
         {/* Left Panel */}
-        <div className="w-full lg:w-[300px] bg-white rounded-2xl shadow-md p-5 flex flex-col items-center text-center">
+        <div className="w-full lg:w-[300px] bg-white rounded-2xl shadow-md p-5 flex flex-col items-center text-center ">
           {/* Profile Image */}
           <div className="w-full rounded-xl overflow-hidden">
             <Image

@@ -75,7 +75,7 @@ const QuoteReveal = () => {
   return (
     <div
       ref={ref}
-      className={`pt-[200px] px-8 sm:px-10 md:px-[120px] max-w-[1300px] relative`}
+      className={`pt-[200px] px-8 sm:px-10 md:px-[270px] max-w-[1300px] relative`}
     >
       <motion.div
         className={`text-[32px] md:text-[43px] leading-[45px] -tracking-[0.01em] text-left `}

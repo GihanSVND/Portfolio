@@ -31,7 +31,7 @@ const ProjectGrid = () => {
           <span className="w-2 h-2 bg-[#1F1F1F] rounded-full inline-block"></span>
           My Projects
         </p>
-        <h2 className={`${satoshim.className} text-2xl md:text-[45px] mt-3 text-[#1F1F1F] leading-[50px] -tracking-[0.02em]`}>
+        <h2 className={`${satoshim.className} text-4xl md:text-[45px] mt-3 text-[#1F1F1F] leading-[50px] -tracking-[0.02em]`}>
           Things that made <br /> for the future
         </h2>
       </div>
